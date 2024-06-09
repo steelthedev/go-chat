@@ -36,6 +36,3 @@ go run .
 ## License
 
 This project is licensed under the MIT License. 
-
-<p align="center" style="font-size: 8px">Thanks to <a href="https://github.com/steelthedev">@steelthedev</a>!</p>
-
