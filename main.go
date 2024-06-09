@@ -21,6 +21,10 @@ func main() {
 
 	// app.Use(server.HandleConnections)
 
+	app.Get("/ping", func(ctx *fiber.Ctx) error {
+		return ctx.SendString("Welcome to fiber")
+	})
+
 	app.Get("/", appHandler.HandleGetIndex)
 	app.Get("/ws", websocket.New(func(ctx *websocket.Conn) {
 		server.HandleWebSocket(ctx)
